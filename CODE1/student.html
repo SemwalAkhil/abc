@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form action="student" method="post" enctype="multipart/form-data">
+
+    <label>Full Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <br><br>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone">
+    <br><br>
+
+    <label>Age:</label>
+    <input type="number" name="age" min="16" max="60">
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob">
+    <br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+
+    <label>Subjects:</label>
+    <input type="checkbox" name="subject" value="Java"> Java
+    <input type="checkbox" name="subject" value="Python"> Python
+    <input type="checkbox" name="subject" value="DBMS"> DBMS
+    <br><br>
+
+    <label>Course:</label>
+    <select name="course">
+        <option value="BCA">BCA</option>
+        <option value="MCA">MCA</option>
+        <option value="BTech">B.Tech</option>
+        <option value="MTech">M.Tech</option>
+    </select>
+    <br><br>
+
+    <label>Address:</label>
+    <textarea name="address" rows="4" cols="30"></textarea>
+    <br><br>
+
+    <label>Upload Photo:</label>
+    <input type="file" name="photo" accept="image/*">
+    <br><br>
+
+    <label>Personal Website:</label>
+    <input type="url" name="website">
+    <br><br>
+
+    <label>Favorite Color:</label>
+    <input type="color" name="color">
+    <br><br>
+
+    <label>Skill Level:</label>
+    <input type="range" name="skill" min="0" max="10">
+    <br><br>
+
+    <input type="hidden" name="formType" value="student">
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>

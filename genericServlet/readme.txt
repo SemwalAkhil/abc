@@ -1,0 +1,1 @@
+in generic servlet use web.xml instead of .html file rest remains same
